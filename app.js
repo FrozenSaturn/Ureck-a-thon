@@ -1,5 +1,3 @@
-// import { getFirestore,doc,getDoc } from "firebase/firestore";
-
 const firebaseConfig = {
   apiKey: "AIzaSyBoNoQzyt0dQoGHWkyL-o6Q07OM7nsIn-w",
   authDomain: "women-empowerment-c3961.firebaseapp.com",
@@ -11,10 +9,11 @@ const firebaseConfig = {
   measurementId: "G-M2LY0ZR3GG",
 };
 
-// Initialize Firebase
+// -----Initialize Firebase-----
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
+// -----For sending posts to Firebase-----
 function submitPost() {
   var name = document.getElementById("name").value;
   var company = document.getElementById("company").value;
@@ -41,6 +40,7 @@ function submitPost() {
     });
 }
 
+// -----Clearing the form-----
 function clearForm() {
   document.getElementById("name").value = "";
   document.getElementById("company").value = "";
@@ -50,6 +50,7 @@ function clearForm() {
   document.getElementById("video").value = ""; // Clear the file input
 }
 
+// -----Dynamically creating branches for companies-----
 function populateBranches() {
   var companySelect = document.getElementById("company");
   var branchSelect = document.getElementById("branch");
@@ -78,13 +79,10 @@ function populateBranches() {
     branchSelect.add(option);
   });
 }
-
-// Event listener for company dropdown change
 document.getElementById("company").addEventListener("change", populateBranches);
-
-// Initial population of branches based on the selected company
 populateBranches();
 
+// -----For displaying posts dynamically on viewing page-----
 function fetchAndDisplayPosts() {
   var postsContainer = document.getElementById("posts");
 
@@ -112,40 +110,3 @@ function fetchAndDisplayPosts() {
       });
     });
 }
-
-document.getElementById("searchBox").addEventListener("keyup", function () {
-  const searchText = this.value.toLowerCase();
-  filterPostsByCompany(searchText);
-});
-
-function filterPostsByCompany(searchText) {
-  var postsContainer = document.getElementById("posts");
-  postsContainer.innerHTML = ""; // Clear existing posts
-
-  db.collection("posts")
-    .orderBy("timestamp", "desc")
-    .get()
-    .then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        var post = doc.data();
-        if (post.company.toLowerCase().includes(searchText)) {
-          // Check if the company name includes the search text
-          var postHTML = `
-          <div class="post">
-              <div class="post-info">
-                  <h2>${post.name} - ${post.year}</h2>
-                  <p><strong>Company:</strong> ${post.company}</p>
-                  <p><strong>Branch:</strong> ${post.branch}</p>
-                  <p><strong>Experience:</strong> ${post.content}</p>
-              </div>
-              <div class="post-image">
-                  <img src="${post.imageUrl}" alt="Post image">
-              </div>
-          </div>
-        `;
-          postsContainer.innerHTML += postHTML;
-        }
-      });
-    });
-}
-

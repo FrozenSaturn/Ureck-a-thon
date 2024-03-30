@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Your Website Title</title>
+    <title>Reporting Page</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assests/Main-Logo_noBG.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -15,15 +16,15 @@
     <!-- Nav-Bar Begins -->
     <nav>
       <div class="navbar">
-        <div class="logo"><a href="#">Female</a></div>
+        <div class="logo"><a href="#"><img src="assests/Title-Logo-NoBG.png" alt=""></a></div>
         <ul class="menu">
-          <li><a href="#Home">Report</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="./veiw-page.html">View</a></li>
+          <li><a href="./home-page">Home</a></li>
         </ul>
       </div>
     </nav>
     <section id="Home">
-      <div class="container">
+      <div class="container" id="reporting-container">
         <h1>REPORT</h1>
         <div class="form-group">
           <select id="company">
@@ -51,13 +52,7 @@
         <button class="cancel-button" onclick="clearForm()">Cancel</button>
         <button class="verification-button">Verify</button>
       </div>
-
-      <div id="posts"></div>
     </section>
-    <section id="Contact">Contact Section</section>
-    <div class="button">
-      <a href="#Home"><i class="fas fa-arrow-up"></i></a>
-    </div>
     <!-- Nav-Bar Ends -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
