@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Website Title</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Nav-Bar Begins -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Female</a></div>
+        <ul class="menu">
+          <li><a href="#Home">Report</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="Home">
+      <div class="container">
+        <h1>REPORT</h1>
+        <div class="form-group">
+          <select id="company">
+            <option value="" selected disabled>Select Company</option>
+            <option value="Company A">Company A</option>
+            <option value="Company B">Company B</option>
+            <!-- Add more companies as needed -->
+          </select>
+          <select id="branch">
+            <option value="" selected disabled>Select Branch</option>
+            <!-- Options will be populated dynamically based on the selected company -->
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" />
+          <input type="text" id="year" placeholder="Year" />
+        </div>
+        <div class="form-group">
+          <textarea
+            id="postContent"
+            placeholder="Write your experience here..."
+          ></textarea>
+        </div>
+        <button class="submit-button" onclick="submitPost()">Submit</button>
+        <button class="cancel-button" onclick="clearForm()">Cancel</button>
+        <button class="verification-button">Verify</button>
+      </div>
+
+      <div id="posts"></div>
+    </section>
+    <section id="Contact">Contact Section</section>
+    <div class="button">
+      <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Nav-Bar Ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/v7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/v7.20.0/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

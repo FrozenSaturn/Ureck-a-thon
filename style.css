@@ -1,3 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6e6;
+  margin: 0;
+  padding: 0;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -5,14 +12,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 nav {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 75px;
-  background: #ffe6e6;
+  background: #ff2626;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 nav .navbar {
@@ -21,7 +27,7 @@ nav .navbar {
   justify-content: space-between;
   height: 100%;
   max-width: 90%;
-  background: #ffe6e6;
+  background: #ff2626;
   margin: auto;
 }
 nav .navbar .logo a {
@@ -43,244 +49,240 @@ nav .navbar .menu {
   font-weight: 500;
   text-decoration: none;
 }
-
 section {
   display: flex;
   height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
-  color: #ff1616;
+}
+#Home {
+  background: #ffe6e6;
 }
 
-#Home {
-  background: #fff;
+/* Main Report Section */
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 9vh;
+  font-style: arial;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: 50%;
+  padding: 10px;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M4 5l4-4H0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
+  padding-right: 30px;
+}
+
+.form-group textarea {
+  padding: 10px;
+  resize: vertical;
+  width: 100%;
+  min-height: 100px;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto Slab", "Droid Serif", "Segoe UI", system-ui, Arial,
+    sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  width: 25%;
+  margin: 1rem;
+}
+
+.cancel-button {
+  align-items: center;
+  background-color: #ffe7e7;
+  background-position: 0 0;
+  border: 1px solid #fee0e0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #d33a2c;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  touch-action: manipulation;
+}
+
+.cancel-button:active,
+.cancel-button:hover,
+.cancel-button:focus {
+  outline: 0;
+}
+
+.cancel-button:active {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.cancel-button:hover {
+  background-color: #ffe3e3;
+  border-color: #faa4a4;
+}
+
+.cancel-button:active:hover,
+.cancel-button:focus:hover,
+.cancel-button:focus {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.verification-button {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 13rem;
+}
+
+.verification-button:hover {
+  background-color: #374151;
+}
+
+.verification-button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Main Report Section Ends */
+
 #About {
   background: #f2f2f2;
 }
-
+#Category {
+  background: #e6e6e6;
+}
+#Latest {
+  background: #fff;
+}
 #Contact {
   background: #f2f2f2;
 }
-
+#Feedback {
+  background: #e6e6e6;
+}
 .button a {
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #ffe6e6;
+  background: #2980b9;
   padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
 }
 
-.button-s {
-  bottom: 40px;
-  right: 40px;
-  color: #fff;
-  background: #ffe6e6;
-  padding: 7px 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  border-color: #ffe6e6;
-}
-section .homepage .next-home-page .about-section .contact-us-section {
-  width: 100%;
-  display: inline-block;
-  background: #ffe6e6;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-/* FOOTER */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-}
-
-.footer-distributed {
-  background: #ffe6e6;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-  padding: 15px 30px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left {
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3 {
-  color: #ffffff;
-  font: normal 36px "Open Sans", cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span {
-  color: #bd1616;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links {
-  color: #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer-distributed .footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  font-weight: 400;
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer-distributed .footer-company-name {
-  color: #222;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center {
-  width: 35%;
-}
-
-.footer-distributed .footer-center i {
-  background-color: #ffe6e6;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 400;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer-distributed .footer-center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.footer-distributed .footer-center p a {
-  color: #bd1616;
-  text-decoration: none;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight: 300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right {
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about {
-  line-height: 20px;
-  color: #92999f;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
+#postForm {
   margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons {
-  margin-top: 25px;
+#postContent {
+  margin-right: 10px;
 }
 
-.footer-distributed .footer-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #ffe6e6;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
+#posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  gap: 5rem; /* Adds some space between the posts */
+  margin-top: 20px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  gap: 2rem;
+}
 
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
+#searchBox {
+  padding: 8px 10rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column;
   }
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0;
+  .post-info {
+    flex: none; /* Resets the flex property */
   }
 }
-/* FOOTER END */

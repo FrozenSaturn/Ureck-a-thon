@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Posts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navbar">
+        <div class="logo"><a href="#">Female</a></div>
+        <input type="text" id="searchBox" placeholder="Search by company..." />
+        <ul class="menu">
+          <li><a href="#Home">Report</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="vewing-content">
+      <div id="posts" class="container">
+        <!-- Posts will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/v7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/v7.20.0/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+    <script>
+      // Call function to fetch and display posts from Firebase
+      fetchAndDisplayPosts();
+    </script>
+  </body>
+</html>
