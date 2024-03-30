@@ -64,6 +64,68 @@ section {
   background: #f2f2f2;
 }
 
+/* Home page */
+.homepage h1,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage h1 {
+  font-size: 50px;
+}
+
+.homepage p {
+  margin-top: 7.5px;
+  font-size: 15px;
+}
+
+.homepage-p {
+  width: 60%;
+  margin-left: 280px;
+}
+
+/* Home page endsss */
+
+/* Welcome Page begins */
+
+/* Welcome Page */
+/* Welcome Page */
+.next-home-page {
+  background-color: #ffe6e6;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.next-home-page h1 {
+  color: #bd1616;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.next-home-page h3 {
+  color: #bd1616;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.next-home-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Welcome page ends */
+
 .button a {
   position: fixed;
   bottom: 20px;
@@ -76,15 +138,56 @@ section {
   box-shadow: rgba(0, 0, 0, 0.15);
 }
 
-.button-s {
-  bottom: 40px;
-  right: 40px;
+.button-report {
+  text-underline-offset: 1px;
+  background: #e62143;
+  border-radius: 10px;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
   color: #fff;
-  background: #ffe6e6;
-  padding: 7px 12px;
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+  border: #bd1616;
+  height: 40px;
+  width: 135px;
+  cursor: pointer;
+  margin-right: 4px;
   font-size: 18px;
-  border-radius: 6px;
-  border-color: #ffe6e6;
+  transition: opacity 0.15s;
+  vertical-align: top;
+  margin-left: 50px;
+}
+
+.button-s {
+  background-color: #ffe6e6;
+  color: #ff1616;
+  border: #bd1616;
+  height: 40px;
+  width: 135px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 4px;
+  font-size: 18px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+  margin-left: 470px;
+}
+
+.button-s:hover {
+  opacity: 0.7;
+}
+
+.button-s:active {
+  opacity: 0.5;
+}
+
+.button-report:hover {
+  opacity: 0.7;
+}
+
+.button-report:active {
+  opacity: 0.5;
 }
 
 section .homepage .next-home-page .about-section .contact-us-section {
@@ -286,3 +389,62 @@ section .homepage .next-home-page .about-section .contact-us-section {
   }
 }
 /* FOOTER END */
+/* About Section */
+/* About Section */
+.about-section {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.about-section h1 {
+  color: #bd1616;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section h3 {
+  color: #bd1616;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-us-section {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.contact-us-section h1 {
+  color: #bd1616;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-us-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-us-section p a {
+  color: #bd1616;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-us-section p a:hover {
+  text-decoration: underline;
+}
+/* About section ends */
