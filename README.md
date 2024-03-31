@@ -22,7 +22,7 @@ Women are facing problems in their workspace and they have no one to go to. This
 For installing the project download the zip file and run the ``index.html`` file. 
 ## Deployment
 
-The project is deployed on ``https://frozensaturn.github.io/Ureck-a-thon/``
+The project is deployed on https://frozensaturn.github.io/Ureck-a-thon/
 
 
 ## Usage/Examples
