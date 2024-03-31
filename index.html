@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>ReportIt-Voice raised by Women</title>
-    <link rel="stylesheet" href="landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assests/Main-Logo_noBG.png" />
     <!-- Fontawesome CDN Link -->
     <link
       rel="stylesheet"
@@ -14,7 +21,9 @@
   <body>
     <nav>
       <div class="navbar">
-        <div class="logo"><a href="#" style="color: #bd1616">ReportIt</a></div>
+        <div class="logo">
+          <a href="#"><img src="assests/Title-Logo-NoBG.png" alt="" /></a>
+        </div>
         <ul class="menu">
           <li><a href="#Home" style="color: #bd1616">Home</a></li>
           <li><a href="#About" style="color: #bd1616">About</a></li>
@@ -23,8 +32,8 @@
       </div>
     </nav>
     <section class="homepage" id="Home">
-      <div>
-        <h1>ReportIt</h1>
+      <div class="main-content-intro">
+        <img src="assests/Title-Logo-NoBG.png" alt="" />
         <div class="homepage-p">
           <p>
             Submit your experience with valid identification and company
@@ -34,18 +43,18 @@
             workplace. Join Us Today and Make a Difference in Workplace Safety!
           </p>
         </div>
-        <br />
-        <a href="veiw-page.html" target="_blank"
-          ><button class="button-s">View Complaints</button></a
-        >
-        <a href="reporting-page.html" target="_blank"
-          ><button class="button-report">Report</button></a
-        >
+        <div class="activity-buttons">
+          <a href="veiw-page.html"
+            ><button class="button-s">View Complaints</button></a
+          >
+          <a href="reporting-page.html"
+            ><button class="button-report">Report</button></a
+          >
+        </div>
       </div>
     </section>
     <section class="next-home-page">
-      <div></div>
-      <div>
+      <div class="welcome-section">
         <h1>Welcome to ReportIt</h1>
 
         <p>
@@ -53,37 +62,33 @@
           workplace safety and accountability. Our platform allows corporate
           women to share their workplace experiences securely and anonymously.
         </p>
-        <br />
         <h3><i class="fa-solid fa-shapes"></i> Features</h3>
 
         <p>
           Share Your Experience: Contribute to our database by sharing your
           workplace encounters with verified identification.
         </p>
-        <br />
         <h3><i class="fa-solid fa-circle-info"></i> Access Information</h3>
         <p>
           Explore our database to learn about the safety record of potential
           employers.
         </p>
-        <br />
         <h3><i class="fa-solid fa-handshake-angle"></i> Support Our Mission</h3>
         <p>
           Join our community in advocating for safer work environments for all.
         </p>
-        <br />
       </div>
     </section>
     <section class="about-section" id="About">
-      <div>
-        <h1>About Section</h1>
+      <div class="about-section-info">
+        <h1>About</h1>
         <h3>About Us</h3>
 
         <p>
           Welcome to ReportIt, a dedicated platform for corporate women to share
           their workplace experiences and contribute to building safer work
-          environments. At [Website Name], we believe in transparency,
-          accountability, and empowerment.
+          environments. At ReportIt, we believe in transparency, accountability,
+          and empowerment.
         </p>
 
         <h3>Our Mission</h3>
@@ -119,7 +124,7 @@
     </section>
 
     <section class="contact-us-section" id="Contact Us">
-      <div>
+      <div class="contact-section-info">
         <h1>Contact Section</h1>
         <p>
           Contact Us If you have any questions, concerns, or feedback, please
@@ -133,11 +138,12 @@
     <div class="button">
       <a href="#Home"><i class="fas fa-arrow-up"></i></a>
     </div>
+
     <!-- FOOTER -->
-    <section>Footer Example 4</section>
+
     <footer class="footer-distributed">
       <div class="footer-left">
-        <h3>ReportIt<span>logo</span></h3>
+        <a href="#"><img src="assests/Title-Logo-NoBG.png" alt="" /></a>
 
         <p class="footer-links">
           <a href="#" class="link-1">Home</a>
@@ -152,7 +158,7 @@
 
       <div class="footer-center">
         <div>
-          <i class="fa fa-map-marker"></i>
+          <i class="fa-solid fa-location-dot"></i>
           <p><span>1/40 Nelinagar</span> North Kolkata, West Bengal</p>
         </div>
 

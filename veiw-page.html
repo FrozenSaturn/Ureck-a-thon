@@ -3,23 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
     <title>View Posts</title>
-    <link rel="icon" href="assests/Main-Logo_noBG.png">
+    <link rel="icon" href="assests/Main-Logo_noBG.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navigation">
       <div class="navbar">
-        <div class="logo"><a href="#"><img src="assests/Title-Logo-NoBG.png" alt=""></a></div>
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="assests/Title-Logo-NoBG.png" alt=""
+          /></a>
+        </div>
         <input type="text" id="searchBox" placeholder="Search by company..." />
         <ul class="menu">
           <li><a href="./reporting-page.html">Report</a></li>
-          <li><a href="./home-page">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
         </ul>
       </div>
     </nav>
 
-    <section style="padding-top: 10rem;">
+    <section style="padding-top: 10rem">
       <div id="posts" class="container">
         <!-- Posts will be dynamically loaded here -->
       </div>
